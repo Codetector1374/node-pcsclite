@@ -22,7 +22,7 @@
 					{
 						"include_dirs": [
 							"/usr/include/PCSC",
-							"<!(node -e \"require('nan')\")"
+							"<!(["node", "-e", "require(\'nan\')"])"
 						],
 						"link_settings": {
 							"libraries": [
@@ -42,7 +42,7 @@
 							"PCSC"
 						],
 						"include_dirs": [
-							"<!(node -e \"require('nan')\")"
+							"<!(["node", "-e", "require(\'nan\')"])"
 						]
 					}
 				],
@@ -53,7 +53,7 @@
 							"-lWinSCard"
 						],
 						"include_dirs": [
-							"<!(node -e \"require('nan')\")"
+							"<!(["node", "-e", "require(\'nan\')"])"
 						]
 					}
 				]
